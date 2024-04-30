@@ -27,7 +27,7 @@ int minOperations(int* nums, int numsSize, int k)
     }
 }
 
-/* Main function */
+/* Main function to test cases */
 int main(void)
 {
     int nums[] = {2, 1, 3, 4};
