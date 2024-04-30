@@ -27,7 +27,7 @@ This solution is implemented in C. The main components of the implementation are
 ## Compilation and Execution
 
 - Compile the program using GCC with the command `gcc xor_equal_to_k.c -o xorK`.
-- Execute the compiled program by running `./solution` in the terminal.
+- Execute the compiled program by running `./xorK` in the terminal.
 
 ## Output
 The program will output the minimum number of operations required to make the bitwise XOR of all elements of the final array equal to `k`.
