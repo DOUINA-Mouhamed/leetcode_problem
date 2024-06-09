@@ -1,8 +1,5 @@
 # Two Sum - LeetCode Problem
 
-## Author
-DOUINA Mouhamed
-
 ## Submission Details
 - **Status**: Accepted
 - **Submitted at**: Jun 09, 2024 15:19
