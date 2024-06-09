@@ -1,35 +1,51 @@
 # Two Sum - LeetCode Problem
 
-## Results
-- **Accepted**
-- **Submitted By**: DOUINA Mouhamed
-- **Submission Date**: April 28, 2024, 20:20
-- **Runtime**: 3 ms (Beats 99.46% of C submissions)
-- **Memory Usage**: 34.58 MB (Beats 5.14% of C submissions)
+## Author
+DOUINA Mouhamed
+
+## Submission Details
+- **Status**: Accepted
+- **Submitted at**: Jun 09, 2024 15:19
+- **Runtime**: 0ms
+  - Beats 100.00% of users with Rust
+- **Memory**: 2.56MB
+  - Beats 6.88% of users with Rust
 
 ## Problem Statement
-Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to the target. You may assume that each input would have exactly one solution, and you may not use the same element twice. The answer can be returned in any order.
 
-## Implementation Details
+### 1. Two Sum
+**Difficulty**: Easy
 
-This solution is implemented in C. The main components of the implementation are:
+### Problem Description
+Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
 
-- **Hash Table**: Utilizes a custom hash table for storing elements and their indices to facilitate quick lookup.
-- **Hash Functions**: Employs linear probing for collision handling within the hash table.
-- **Memory Management**: Implements dynamic memory allocation for managing the hash table and result array. Proper memory management is ensured by the caller through appropriate memory deallocation.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
-## Compilation and Execution
+You can return the answer in any order.
 
-- Compile the program using GCC with the command `gcc twoSum.c -o twoSum`.
-- Execute the compiled program by running `./twoSum` in the terminal.
+### Examples
 
-## Output
-The program will output the indices of the two numbers that add up to the target if a solution is found. If no solution is available, it will output a message indicating no solution was found.
+#### Example 1:
+- **Input**: `nums = [2, 7, 11, 15]`, `target = 9`
+- **Output**: `[0, 1]`
+- **Explanation**: Because `nums[0] + nums[1] == 9`, we return `[0, 1]`.
 
-## Constraints
-- The length of `nums` must be between 2 and 10,000.
-- Values in `nums` and the `target` can range from -1,000,000,000 to 1,000,000,000.
-- There is exactly one valid answer for each input.
+#### Example 2:
+- **Input**: `nums = [3, 2, 4]`, `target = 6`
+- **Output**: `[1, 2]`
 
-## Additional Information
-The returned array from the function is dynamically allocated, and it is expected that the caller will free this memory.
+#### Example 3:
+- **Input**: `nums = [3, 3]`, `target = 6`
+- **Output**: `[0, 1]`
+
+### Constraints
+- `2 <= nums.length <= 10^4`
+- `-10^9 <= nums[i] <= 10^9`
+- `-10^9 <= target <= 10^9`
+- Only one valid answer exists.
+
+### Follow-up
+Can you come up with an algorithm that is less than `O(n^2)` time complexity?
+
+## Solution
+The provided solution uses a hash map to achieve a time complexity of `O(n)`.
